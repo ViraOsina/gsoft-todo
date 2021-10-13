@@ -7,6 +7,14 @@
 
 a {
   text-decoration: none;
+  list-style: none;
   color: inherit;
   cursor: pointer;
+  font-size: 20px;
+}
+
+.active__link {
+  font-weight: 400;
+  color: rgb(244,135,52);
+  text-decoration: underline;
 }
