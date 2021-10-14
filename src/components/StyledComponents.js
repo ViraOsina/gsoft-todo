@@ -24,7 +24,7 @@ export const NavigationLink = styled.li `
     
 `
 export const Main = styled.main `
-    height: calc(100vh - 60px);
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@ export const Main = styled.main `
 
 export const TodoContainer = styled.div`
     width:  600px;
-    max-height: calc(100vh - 100px);
+    max-height: calc(100vh - 80px);
     margin: 20px auto;
     padding-bottom: 10px;
     background: rgba( 244, 135, 52, 0.45 );
@@ -48,12 +48,13 @@ export const TodoContainer = styled.div`
 `
 export const InnerContainer = styled.div `
     margin-bottom: 25px;
+    overflow-y: auto;
 `
 
 export const TodoItem = styled.li`
     width:  100%;
     list-style: none;
-    padding: 10px;
+    padding: 10px 60px 10px 10px;
     font-weight: 400;
     font-size: 18px;
     border-bottom: 1px solid rgb(153,159,173);
@@ -116,4 +117,20 @@ export const DeleteBtn = styled.div `
     &:hover {
         transform: scale(1.1); 
     }
+`
+export const EditBtn = styled.div `
+    
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1); 
+    }
+`
+
+export const EditInput = styled.input `
+    width: 80%;
+    font-size: 18px;
+    resize: none;
 `
