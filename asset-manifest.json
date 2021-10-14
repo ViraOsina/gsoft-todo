@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gsoft-todo/static/css/main.eea30cdf.chunk.css",
-    "main.js": "/gsoft-todo/static/js/main.c6f9bd14.chunk.js",
-    "main.js.map": "/gsoft-todo/static/js/main.c6f9bd14.chunk.js.map",
+    "main.js": "/gsoft-todo/static/js/main.ca74d0c5.chunk.js",
+    "main.js.map": "/gsoft-todo/static/js/main.ca74d0c5.chunk.js.map",
     "runtime-main.js": "/gsoft-todo/static/js/runtime-main.664b445a.js",
     "runtime-main.js.map": "/gsoft-todo/static/js/runtime-main.664b445a.js.map",
     "static/js/2.223663bb.chunk.js": "/gsoft-todo/static/js/2.223663bb.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.664b445a.js",
     "static/js/2.223663bb.chunk.js",
     "static/css/main.eea30cdf.chunk.css",
-    "static/js/main.c6f9bd14.chunk.js"
+    "static/js/main.ca74d0c5.chunk.js"
   ]
 }
