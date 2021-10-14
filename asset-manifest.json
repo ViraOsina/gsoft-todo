@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gsoft-todo/static/css/main.eea30cdf.chunk.css",
+    "main.js": "/gsoft-todo/static/js/main.c6f9bd14.chunk.js",
+    "main.js.map": "/gsoft-todo/static/js/main.c6f9bd14.chunk.js.map",
+    "runtime-main.js": "/gsoft-todo/static/js/runtime-main.664b445a.js",
+    "runtime-main.js.map": "/gsoft-todo/static/js/runtime-main.664b445a.js.map",
+    "static/js/2.223663bb.chunk.js": "/gsoft-todo/static/js/2.223663bb.chunk.js",
+    "static/js/2.223663bb.chunk.js.map": "/gsoft-todo/static/js/2.223663bb.chunk.js.map",
+    "static/js/3.8fd882be.chunk.js": "/gsoft-todo/static/js/3.8fd882be.chunk.js",
+    "static/js/3.8fd882be.chunk.js.map": "/gsoft-todo/static/js/3.8fd882be.chunk.js.map",
+    "index.html": "/gsoft-todo/index.html",
+    "static/css/main.eea30cdf.chunk.css.map": "/gsoft-todo/static/css/main.eea30cdf.chunk.css.map",
+    "static/js/2.223663bb.chunk.js.LICENSE.txt": "/gsoft-todo/static/js/2.223663bb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.664b445a.js",
+    "static/js/2.223663bb.chunk.js",
+    "static/css/main.eea30cdf.chunk.css",
+    "static/js/main.c6f9bd14.chunk.js"
+  ]
+}
