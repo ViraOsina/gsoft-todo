@@ -18,3 +18,18 @@ a {
   color: rgb(244,135,52);
   text-decoration: underline;
 }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(63,83,127);
+  margin-bottom: 25px;
+  display: inline-flex;
+}
+
+.orange {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(244,135,52);
+  margin: 0 10px;
+}

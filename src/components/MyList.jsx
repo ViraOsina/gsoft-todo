@@ -17,7 +17,11 @@ function MyList () {
     };
 
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/todos").then((result) => {
+    axios.get("https://jsonplaceholder.typicode.com/todos",{
+        params: {
+          _limit: 10
+         }
+      }).then((result) => {
       setTodos(result.data);
     });
   }, []);

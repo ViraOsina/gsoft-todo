@@ -1,12 +1,11 @@
 import React from 'react';
-import { TodoContainer, TodoItem, TodoUl, DeleteBtn } from './StyledComponents';
-import AddTodo from './AddTodo';
+import { TodoContainer, TodoItem, TodoUl, DeleteBtn, InnerContainer } from './StyledComponents';
 import Delete from './trash.png';
 
 const TodoList = ({ todos, onUpdateTodo }) => {
     return (
     <TodoContainer>
-    <AddTodo/>
+    <InnerContainer>
       <TodoUl>
         {todos.map((todo) => (
           <TodoItem         
@@ -28,6 +27,7 @@ const TodoList = ({ todos, onUpdateTodo }) => {
 
         ))}
       </TodoUl>
+    </InnerContainer>
     </TodoContainer>
     );
   };

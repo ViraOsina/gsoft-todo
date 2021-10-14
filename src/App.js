@@ -16,15 +16,15 @@ function App() {
       <NavigationBar>
         <ul>
         <NavigationLink><NavLink to="/" exact activeClassName="active__link">Home</NavLink></NavigationLink>
-        <NavigationLink><NavLink to="/new-list" exact activeClassName="active__link">Create new todo list</NavLink></NavigationLink>
-        <NavigationLink><NavLink to="/my-todo" exact activeClassName="active__link">My todo list</NavLink></NavigationLink>
+        <NavigationLink><NavLink to="/new-todo" exact activeClassName="active__link">Create new todo</NavLink></NavigationLink>
+        <NavigationLink><NavLink to="/todo-list" exact activeClassName="active__link">My todo list</NavLink></NavigationLink>
         </ul>
       </NavigationBar>
       <Main>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/new-list" component={NewList} />
-          <Route exact path="/my-todo" component={MyList} />
+          <Route exact path="/new-todo" component={NewList} />
+          <Route exact path="/todo-list" component={MyList} />
         </Switch>
       </Main>
     </Router>
