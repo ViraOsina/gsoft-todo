@@ -1,7 +1,7 @@
 import React from 'react';
 import AddTodo from './AddTodo';
 
-const NewList = props => {
+const NewList = () => {
     return (
         <>
         <h1>Add your new task below</h1>

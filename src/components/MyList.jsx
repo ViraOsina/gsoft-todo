@@ -1,22 +1,22 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import TodoList from './TodoList';
+import { useEffect } from 'react';
+import { TodoContainer, TodoUl, InnerContainer } from './StyledComponents';
+
+import Todo from './Todo';
+import { useSelector, useDispatch } from 'react-redux';
+import { getTodosAsync } from '../redux/todoReducer';
+
 
 function MyList () {
-    const [todos, setTodos] = useState(null);
+    const todos = useSelector((state) => state.todos);
+    const dispatch = useDispatch();
 
-    const onUpdateTodo = (todo) => {
-        const todoItemIndex = todos.findIndex((x) => x.id == todo.id);
-        const newTodos = [...todos];
+    useEffect(() => {
+		dispatch(getTodosAsync());
+	}, [dispatch]);
 
-        const newTodo = newTodos[todoItemIndex];
-        newTodo.completed = !newTodo.completed;
-        newTodos[todoItemIndex] = newTodo;
-        setTodos(newTodos);
-    };
-
-  useEffect(() => {
+//axios to retrieve data from REST API to build mockup
+/*   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/todos",{
         params: {
           _limit: 10
@@ -24,15 +24,24 @@ function MyList () {
       }).then((result) => {
       setTodos(result.data);
     });
-  }, []);
+  }, []); */
 
     return (
         <div>
-            {todos ? (
-                <TodoList todos={todos} onUpdateTodo={onUpdateTodo} />
-            ) : (
-                <div>Loading...</div>
-            )}
+            <TodoContainer> 
+                <InnerContainer>
+                    <TodoUl>
+                    {todos ? (
+                        todos.map((todo) => (
+                            <Todo key={todo.id} id={todo.id} title={todo.title} completed={todo.completed} />
+                        ))
+                    ) : (
+                        <div>Loading...</div>
+                    )}
+                    </TodoUl>
+                </InnerContainer>
+            </TodoContainer>
+            
         </div>
     )
 }
