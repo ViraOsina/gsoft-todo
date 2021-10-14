@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { TodoContainer, TodoUl, InnerContainer } from './StyledComponents';
-
+import AddTodo from './AddTodo';
 import Todo from './Todo';
 import { useSelector, useDispatch } from 'react-redux';
 import { getTodosAsync } from '../redux/todoReducer';
@@ -29,6 +29,7 @@ function MyList () {
     return (
         <div>
             <TodoContainer> 
+                <AddTodo />
                 <InnerContainer>
                     <TodoUl>
                     {todos ? (

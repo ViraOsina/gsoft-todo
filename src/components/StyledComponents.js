@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NavigationBar = styled.div `
     width: 100%;
-    height: 80px;
+    height: 60px;
     display: flex;
     padding: 0 40px;
     align-items: center;
@@ -24,7 +24,7 @@ export const NavigationLink = styled.li `
     
 `
 export const Main = styled.main `
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -70,20 +70,21 @@ export const TodoUl = styled.ul`
 `
 
 export const NewInput = styled.input `
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    height: 80%;
     background-color: rgb(221,221,221);
     border: none;
     border-radius: 4px;
     padding: 8px;
-    font-size: 20px;
+    font-size: 16px;
 `
 export const InputContainer = styled.div `
-    width: 80%;
-    height: 100px;
+    width: 100%;
+    height: 60px;
     background-color: rgb(63,83,127);
     padding: 15px;
     display: flex;
+    border-radius: 10px 10px 0 0;
     align-items: center;
 `
 export const AddTodoBtn = styled.button `
