@@ -35,15 +35,25 @@ export const todoReducer = createSlice({
 		editTodo: (state, action) => {
 			const index = state.findIndex((todo) => todo.id === action.payload.id);
 			state[index].title = action.payload.title;
-		}
+		},
+		addNewTodo: (state, action) => {
+			const newTodo = {
+				id: uuidv4(),
+				title: action.payload.title,
+				completed: false,
+			};
+			state.push(newTodo);
+		}, 
 	},
 	extraReducers: {
 		[getTodosAsync.fulfilled]: (state, action) => {
-			return action.payload.todos;
+			const todos = action.payload.todos;
+			return todos;
 		},
+		
 	},
 });
 
-export const { addTodo, toggleComplete, deleteTodo, editTodo } = todoReducer.actions;
+export const { addTodo, toggleComplete, deleteTodo, editTodo, addNewTodo } = todoReducer.actions;
 
 export default todoReducer.reducer;

@@ -1,30 +1,17 @@
 import React from 'react';
-import { useEffect } from 'react';
+
+//style
 import { TodoContainer, TodoUl, InnerContainer } from './StyledComponents';
+
+//components
 import AddTodo from './AddTodo';
 import Todo from './Todo';
-import { useSelector, useDispatch } from 'react-redux';
-import { getTodosAsync } from '../redux/todoReducer';
 
+//redux
+import { useSelector } from 'react-redux';
 
-function MyList () {
+const MyList = () => {
     const todos = useSelector((state) => state.todos);
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-		dispatch(getTodosAsync());
-	}, [dispatch]);
-
-//axios to retrieve data from REST API to build mockup
-/*   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/todos",{
-        params: {
-          _limit: 10
-         }
-      }).then((result) => {
-      setTodos(result.data);
-    });
-  }, []); */
 
     return (
         <div>

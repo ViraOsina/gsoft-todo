@@ -21,6 +21,12 @@ const AddTodo = () => {
         setValue('');
 	};
 
+    const handleKeyDown = (e) => {
+        if(e.key === "Enter") {
+            onSubmit(e)
+        }
+    }
+
     return(
         <InputContainer onSubmit={onSubmit}>
             <NewInput 
@@ -28,7 +34,7 @@ const AddTodo = () => {
                 placeholder="Add new task here"
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
-                
+                onKeyDown={handleKeyDown}
             >
 
             </NewInput>

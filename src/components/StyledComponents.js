@@ -45,6 +45,8 @@ export const TodoContainer = styled.div`
     -webkit-backdrop-filter: blur( 9.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    flex-direction: column;
 `
 export const InnerContainer = styled.div `
     margin-bottom: 25px;
@@ -63,7 +65,7 @@ export const TodoItem = styled.li`
 
 export const TodoUl = styled.ul`
     width:  100%;
-    max-height: calc(100vh - 120px);
+    max-height: calc(100vh - 140px);
     list-style: none;
     padding: 0;
     margin: 0;
